@@ -1,0 +1,3 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root{color-scheme:light} *{box-sizing:border-box} body{margin:0;background:#f8fafc;color:#001633;font-family:Inter,Arial,sans-serif}
+button,input,select,textarea{font:inherit} button{cursor:pointer} .focus-ring:focus{outline:3px solid rgba(0,151,167,.35);outline-offset:2px}

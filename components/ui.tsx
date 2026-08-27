@@ -1,0 +1,4 @@
+import {clsx} from "clsx";
+export function Card({children,className}:{children:React.ReactNode;className?:string}){return <section className={clsx("rounded-2xl bg-white p-5 shadow-soft",className)}>{children}</section>}
+export function Badge({children,tone="cyan"}:{children:React.ReactNode;tone?:"cyan"|"orange"|"dark"}){const c={cyan:"bg-cheops-cyan/10 text-cheops-cyan",orange:"bg-cheops-orange/25 text-cheops-dark",dark:"bg-cheops-dark text-white"}[tone];return <span className={clsx("rounded-full px-2.5 py-1 text-xs font-semibold",c)}>{children}</span>}
+export function Button({children,onClick,variant="primary",type="button"}:{children:React.ReactNode;onClick?:()=>void;variant?:"primary"|"secondary";type?:"button"|"submit"}){return <button type={type} onClick={onClick} className={clsx("focus-ring rounded-xl px-4 py-2.5 font-bold transition hover:opacity-90",variant==="primary"?"bg-cheops-orange text-cheops-dark":"bg-cheops-dark text-white")}>{children}</button>}

@@ -1,0 +1,15 @@
+import {Client,Meeting,Skill} from "./types";
+export const clients:Client[]=[
+{id:"industrie-atlantique",name:"Industrie Atlantique",sector:"Industrie critique",revenue:"85 M€",region:"Bordeaux",contacts:[{role:"DSI",name:"Claire Martin",email:"claire.martin@example.fr"},{role:"DAF",name:"Julien Robert",email:"julien.robert@example.fr"}],solutions:["Cloud privé iCod","EDR"],renewalDate:"2026-12-10",keywords:["NIS 2","OT","résilience"],interest:["SOC managé","NIS 2"],engagements:[{date:"2026-08-20",type:"Livre blanc",detail:"Téléchargement Guide NIS 2",score:18},{date:"2026-08-24",type:"Web",detail:"Consultation page SOC managé",score:22}],aiRecommendation:"Proposer un audit NIS 2 et une trajectoire SOC/PRA."},
+{id:"mutuelle-nova",name:"Mutuelle Nova",sector:"Assurance / Finance",revenue:"210 M€",region:"Paris",contacts:[{role:"DSI",name:"Sophie Bernard",email:"sophie.bernard@example.fr"},{role:"DG",name:"Marc Legrand",email:"marc.legrand@example.fr"}],solutions:["Cloud privé iCod","PRA"],renewalDate:"2027-02-15",keywords:["DORA","tiers","risque"],interest:["DORA","résilience opérationnelle"],engagements:[{date:"2026-08-19",type:"Webinaire",detail:"Participation à DORA 2026",score:30}],aiRecommendation:"Qualifier les dépendances tiers et proposer le package DORA."},
+{id:"clinique-horizon",name:"Clinique Horizon",sector:"Santé",revenue:"42 M€",region:"Lyon",contacts:[{role:"DSI",name:"Amine Diallo",email:"amine.diallo@example.fr"}],solutions:["HDS","EDR"],renewalDate:"2026-11-20",keywords:["HDS","sauvegarde","cyber"],interest:["PRA","SOC managé"],engagements:[{date:"2026-08-22",type:"Livre blanc",detail:"Guide cyber santé",score:16}],aiRecommendation:"Mettre en avant PRA, supervision et exigences HDS."},
+{id:"grand-sud-territoire",name:"Grand Sud Territoire",sector:"Collectivité territoriale",revenue:"Budget 180 M€",region:"Nantes",contacts:[{role:"DSI",name:"Élodie Petit",email:"elodie.petit@example.fr"},{role:"DAF",name:"Thomas Leroy",email:"thomas.leroy@example.fr"}],solutions:["Cloud privé iCod"],renewalDate:"2027-06-01",keywords:["souveraineté","cloud","marché public"],interest:["SOC managé","SecNumCloud"],engagements:[{date:"2026-08-18",type:"Événement",detail:"Rencontre salon collectivités",score:20}],aiRecommendation:"Positionner souveraineté, proximité et extension SOC."}
+];
+export const meetings:Meeting[]=[
+{id:"m1",clientId:"industrie-atlantique",time:"09:30",status:"À préparer",objective:"Préparation trajectoire NIS 2"},
+{id:"m2",clientId:"mutuelle-nova",time:"14:00",status:"Confirmé",objective:"Atelier DORA et résilience"},
+{id:"m3",clientId:"clinique-horizon",time:"16:30",status:"Confirmé",objective:"Revue sécurité HDS"}
+];
+export const skills:Skill[]=[
+{region:"Paris",technology:"ISO 27001",count:24},{region:"Paris",technology:"SecNumCloud",count:12},{region:"Bordeaux",technology:"HPE",count:19},{region:"Bordeaux",technology:"Veeam",count:15},{region:"Lyon",technology:"Fortinet",count:17},{region:"Lille",technology:"NetApp",count:11},{region:"Nantes",technology:"VMware",count:14},{region:"Paris",technology:"HDS",count:16},{region:"Lyon",technology:"ISO 27001",count:13}
+];
